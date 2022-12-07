@@ -1,0 +1,24 @@
+{
+  "name": "objection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "npx knex migrate:latest --knexfile ./db/knexfile.js",
+    "seed-make": "npx knex seed:make dev --knexfile ./db/knexfile.js",
+    "seed": "npx knex seed:run --knexfile ./db/knexfile.js",
+    "down": "npx knex migrate:down --knexfile ./db/knexfile.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "ashimka",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "knex": "^2.3.0",
+    "mysql2": "^2.3.3",
+    "objection": "^3.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
